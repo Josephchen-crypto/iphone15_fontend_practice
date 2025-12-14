@@ -74,14 +74,15 @@ const HowItWorks = () => {
               </span>
               .
             </p>
+
+            <p className="hiw-text g_fadeIn mt-5">
+              Mobile{" "}
+              <span className="text-white">
+                game will look and feel so immersive
+              </span>
+              , with incredibly detailed environment and characters.
+            </p>
           </div>
-          <p className="hiw-text g_fadeIn">
-            Mobile{" "}
-            <span className="text-white">
-              game will look and feel so immersive
-            </span>
-            , with incredibly detailed environment and characters.
-          </p>
 
           <div className="flex-1 flex justify-center flex-col g_fadeIn">
             <p className="hiw-text">New</p>
