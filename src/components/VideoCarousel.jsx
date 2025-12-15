@@ -199,13 +199,16 @@ const VideoCarousel = () => {
       </div>
 
       <div className="relative flex-center mt-10">
+        {/* 视频播放指示器 */}
         <div className="flex-center py-5 px-7 bg-gray-300 backdrop-blur rounded-full">
           {hightlightsSlides.map((_, i) => (
+            // 视频进度条容器
             <span
               key={i}
               ref={(el) => (videoDivRef.current[i] = el)}
               className="mx-2 w-3 h-3 bg-gray-200 rounded-full relative cursor-pointer"
             >
+              {/* 视频进度条 */}
               <span
                 className="absolute h-full w-full rounded-full"
                 ref={(el) => (videoSpanRef.current[i] = el)}
@@ -214,6 +217,7 @@ const VideoCarousel = () => {
           ))}
         </div>
 
+        {/* 视频播放控制按钮，包含播放、暂停、重新播放功能 */}
         <button className="control-btn">
           <img
             src={isLastVideo ? replayImg : !isPlaying ? playImg : pauseImg}
